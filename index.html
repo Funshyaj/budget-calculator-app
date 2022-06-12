@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Budget app</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<header>                                                    
+	<button id="nonFixedPage"><a href="index.html">NON fixed Budget</a></button>
+
+	<button id="fixedPage"><a href="index1.html">Fixed Budget</a> </button>
+</header>
+
+<h1>Enter the items you need</h1>
+
+<div class="itemForm">
+	<div id="textInput">
+	<input type="text" name="itemName">
+	<br>
+	<input type="text" name="itemName">
+</div>
+
+<div id='priceInput'> 
+<input type="number" id="itemPrice1" class="itemPrice"> 
+<br>
+<input type="number" id="itemPrice2" class="itemPrice">
+</div>
+
+<button id="addMore" onclick="add_input()">Add more</button>
+</div>
+
+<button type="submit" onclick="calculate() ">Enter</button>
+
+
+<div class="report">                                                     
+<p>Your Budget forcast is N<span  id="totalExpenses"></span></p>                                                                                               
+</div>
+                                                                                          
+<script src="index.js"></script>
+</body>
+</html>

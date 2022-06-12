@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Budget app</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<header>
+	<button id="nonFixedPage"><a href="index.html">NON fixed Budget</a></button>
+
+	<button id="fixedPage"><a href="index1.html">Fixed Budget</a> </button>
+</header>
+
+
+<h1>Enter your fixed budget</h1>
+<div class="fixedBudgetForm">
+	<input type="number" Id="fixedBudget" value="1">  
+</div>
+
+<div class="formHeader">
+<h1>Enter the items you need</h1></div>
+
+<div class="itemForm">
+	<div id="textInput">  
+		<label id="itemInputLabel">Items:</label>
+	<input type="text" name="itemName">
+	<br>
+	<input type="text" name="itemName">
+</div>
+
+<div id="priceInput"> 
+		<label id="priceInputLabel">price:</label>
+<input type="number" id="itemPrice1" value="1" class="itemPrice"> 
+<br> 
+<input type="number" id="itemPrice2" value="1" class="itemPrice">
+</div>
+
+<button id="addMore" onclick="add()">Add  More</button>
+</div> 
+ 
+<button onclick="calculate()">Enter</button>
+                                                                                                                                                                                                                                                                                                       
+
+<div class="report">                                                     
+<p>Your total expenses are N<span id="totalExpenses"></span></p>
+<p>You have a balance of N<span id="balance" style="font-weight: 1rem;"></span></p>
+<p id="noBalance">Sorry, your budget does not cover this, try removing some items or reducing their prices</p>
+</div>
+ 
+<script src="index1.js"></script>
+</body>
+</html>
