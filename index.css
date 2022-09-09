@@ -1,0 +1,144 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    height: 100vh;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+align-items: center;
+flex-direction: column;}
+
+header{
+display: flex;
+box-shadow: 0 0 10px;
+height: 40px;
+
+}
+
+a{
+ text-decoration: none;
+width: 100%;   
+font-size: larger;
+color:hsla(235, 27%, 100%, 1);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+ 
+}
+
+#page1{
+background-color:hsla(235, 57%, 60%, .6);    
+}
+
+#page2{
+    background-color:hsla(235, 57%, 60%, .9);    
+    }
+
+
+h1{
+margin-top: 40px;
+color: hsla(235, 57%, 60%, 1);}
+
+ h2{
+    color: hsla(235, 57%, 60%, 0.6);}
+
+
+#fixedBudget{
+margin: 20px 0px;
+    height: 40px;
+    padding: 5px;
+}
+
+
+.inputs-section {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    gap: 20px;
+    width:215px;
+    margin: 0 auto;
+}
+
+label{display: flex;
+    gap: 70px;
+    margin-right: 60px;
+    justify-content: flex-start;}
+
+.inputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 11px;
+}
+
+.inputs > #input-text{
+    width: 70%;
+}
+
+.inputs > .price{
+    width: 40%;
+}
+
+input{
+    height: 30%;
+    padding: 5px;
+}
+
+p{
+    
+ font-size:1rem ;
+}
+
+#delete{ 
+    font-weight: bold;
+    color: red;
+    font-size: 2.3rem;
+    transition: 0.5s;
+}
+#delete:hover {
+    font-size: 2.2rem;
+}
+#delete:active{ 
+    font-size: 2rem;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    position: relative;
+    left: 35px;
+    margin: 27px 0px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: hsla(235, 57%, 60%, 1);
+    color: white;
+transition: 0.3s;}
+
+button:active{
+    font-size: 2rem;
+   color: hsla(235, 57%, 60%, 1);
+    background-color: white;}
+
+button:hover{
+    font-size: 2.3rem;
+        color: hsla(235, 57%, 60%, 1);
+         background-color: white;}
+     
+.output{
+    color:hsla(235, 60%, 55%, 1); 
+    font-weight: bold;
+    line-height: 1.5;
+}
+
